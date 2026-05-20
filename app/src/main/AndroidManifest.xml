@@ -17,6 +17,7 @@
         </activity>
 
         <activity android:name=".MusicActivity"/>
+        <activity android:name=".RadioActivity"/>
 
     </application>
 
