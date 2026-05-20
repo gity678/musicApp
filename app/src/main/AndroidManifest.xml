@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.musicapp">
-
     <uses-permission android:name="android.permission.INTERNET"/>
-
     <application
         android:label="My Music"
-        android:theme="@android:style/Theme.Material.NoActionBar">
-
+        android:theme="@android:style/Theme.Material.NoActionBar.Fullscreen">
         <activity android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -15,10 +12,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
         <activity android:name=".MusicActivity"/>
         <activity android:name=".RadioActivity"/>
-
     </application>
-
 </manifest>
