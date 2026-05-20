@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0f2027">
+
+    <EditText
+        android:id="@+id/searchBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:margin="16dp"
+        android:padding="12dp"
+        android:hint="Rechercher..."
+        android:hinttextcolor="#555"
+        android:textColor="#fff"
+        android:background="#000000a0"
+        android:inputType="text"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#ffffff11"
+        android:dividerHeight="1dp"/>
+
+    <LinearLayout
+        android:id="@+id/playerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#1a1a2e"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/pTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/ct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0:00"
+                android:textColor="#666"
+                android:textSize="12sp"/>
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="8dp"
+                android:progressTint="#e91e63"
+                android:thumbTint="#fff"/>
+
+            <TextView
+                android:id="@+id/tt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0:00"
+                android:textColor="#666"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnPrev"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:text="⏮"
+                android:textSize="18sp"
+                android:background="#ffffff11"
+                android:textColor="#ccc"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnPlay"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:text="▶"
+                android:textSize="18sp"
+                android:background="#e91e63"
+                android:textColor="#fff"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:text="⏭"
+                android:textSize="18sp"
+                android:background="#ffffff11"
+                android:textColor="#ccc"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
