@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
         btnMusic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // سنضيف MusicActivity لاحقاً
+                startActivity(new Intent(MainActivity.this, MusicActivity.class));
             }
         });
 
