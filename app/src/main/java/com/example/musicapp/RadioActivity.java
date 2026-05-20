@@ -57,7 +57,6 @@ public class RadioActivity extends Activity {
         gridView.setVerticalSpacing(dp(6));
         gridView.setPadding(dp(8), dp(8), dp(8), dp(8));
         gridView.setClipToPadding(false);
-        gridView.setDivider(null);
         LinearLayout.LayoutParams gridParams = new LinearLayout.LayoutParams(
             ViewGroup.LayoutParams.MATCH_PARENT, 0, 1f);
         root.addView(gridView, gridParams);
