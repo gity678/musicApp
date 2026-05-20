@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/bg_start"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="♪ MY MUSIC"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp"
+        android:letterSpacing="-0.05"/>
+
+    <Button
+        android:id="@+id/btnMusic"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Music"
+        android:textSize="20sp"
+        android:textColor="@color/gray"
+        android:background="@drawable/btn_border"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnRadio"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Radio"
+        android:textSize="20sp"
+        android:textColor="@color/gray"
+        android:background="@drawable/btn_border"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnYoutube"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="YouTube"
+        android:textSize="20sp"
+        android:textColor="@color/gray"
+        android:background="@drawable/btn_border"/>
+
+</LinearLayout>
