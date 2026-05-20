@@ -13,8 +13,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnMusic = findViewById(R.id.btnMusic);
-        Button btnRadio = findViewById(R.id.btnRadio);
+        Button btnMusic   = findViewById(R.id.btnMusic);
+        Button btnRadio   = findViewById(R.id.btnRadio);
         Button btnYoutube = findViewById(R.id.btnYoutube);
 
         btnMusic.setOnClickListener(new View.OnClickListener() {
@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
         btnRadio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // سنضيف RadioActivity لاحقاً
+                startActivity(new Intent(MainActivity.this, RadioActivity.class));
             }
         });
 
